@@ -327,6 +327,7 @@ public final class Player implements
     private boolean isFullscreen = false;
     private boolean isVerticalVideo = false;
     private boolean fragmentIsVisible = false;
+    private boolean isPlaybackBanned = false; // you can't play YouTube when the screen is locked.
 
     private List<VideoStream> availableStreams;
     private int selectedStreamIndex;
@@ -1300,6 +1301,9 @@ public final class Player implements
                 updateEndScreenThumbnail();
                 break;
             case Intent.ACTION_SCREEN_ON:
+
+                isPlaybackBanned = false;
+
                 // Interrupt playback only when screen turns on
                 // and user is watching video in popup player.
                 // Same actions for video player will be handled in ACTION_VIDEO_FRAGMENT_RESUMED
@@ -1308,6 +1312,14 @@ public final class Player implements
                 }
                 break;
             case Intent.ACTION_SCREEN_OFF:
+
+                // YouTube can't play in background.
+                if (currentMetadata != null
+                    && currentMetadata.getServiceId() == YouTube.getServiceId()) {
+                    isPlaybackBanned = true;
+                    pause();
+                }
+
                 // Interrupt playback only when screen turns off with popup player working
                 if (popupPlayerSelected() && (isPlaying() || isLoading())) {
                     useVideoSource(false);
@@ -2870,7 +2882,7 @@ public final class Player implements
         if (DEBUG) {
             Log.d(TAG, "play() called");
         }
-        if (audioReactor == null || playQueue == null || exoPlayerIsNull()) {
+        if (isPlaybackBanned || audioReactor == null || playQueue == null || exoPlayerIsNull()) {
             return;
         }
 
