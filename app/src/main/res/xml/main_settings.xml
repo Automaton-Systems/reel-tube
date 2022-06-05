@@ -11,12 +11,6 @@
         app:iconSpaceReserved="false" />
 
     <PreferenceScreen
-        android:fragment="org.schabi.newpipe.settings.DownloadSettingsFragment"
-        android:icon="@drawable/ic_file_download"
-        android:title="@string/settings_category_downloads_title"
-        app:iconSpaceReserved="false" />
-
-    <PreferenceScreen
         android:fragment="org.schabi.newpipe.settings.AppearanceSettingsFragment"
         android:icon="@drawable/ic_palette"
         android:title="@string/settings_category_appearance_title"

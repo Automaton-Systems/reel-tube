@@ -454,12 +454,6 @@ public final class VideoDetailFragment
                     );
                 }
                 break;
-            case R.id.detail_controls_download:
-                if (PermissionHelper.checkStoragePermissions(activity,
-                        PermissionHelper.DOWNLOAD_DIALOG_REQUEST_CODE)) {
-                    this.openDownloadDialog();
-                }
-                break;
             case R.id.detail_controls_share:
                 if (currentInfo != null) {
                     ShareUtils.shareText(requireContext(), currentInfo.getName(),
@@ -554,9 +548,6 @@ public final class VideoDetailFragment
             case R.id.detail_controls_popup:
                 openPopupPlayer(true);
                 break;
-            case R.id.detail_controls_download:
-                NavigationHelper.openDownloads(activity);
-                break;
             case R.id.overlay_thumbnail:
             case R.id.overlay_metadata_layout:
                 openChannel(currentInfo.getUploaderUrl(), currentInfo.getUploaderName());
@@ -632,7 +623,6 @@ public final class VideoDetailFragment
             binding.detailControlsPlaylistAppend.setBackgroundColor(transparent);
             binding.detailControlsBackground.setBackgroundColor(transparent);
             binding.detailControlsPopup.setBackgroundColor(transparent);
-            binding.detailControlsDownload.setBackgroundColor(transparent);
             binding.detailControlsShare.setBackgroundColor(transparent);
             binding.detailControlsOpenInBrowser.setBackgroundColor(transparent);
             binding.detailControlsPlayWithKodi.setBackgroundColor(transparent);
@@ -654,8 +644,6 @@ public final class VideoDetailFragment
         binding.detailControlsPopup.setOnClickListener(this);
         binding.detailControlsPopup.setOnLongClickListener(this);
         binding.detailControlsPlaylistAppend.setOnClickListener(this);
-        binding.detailControlsDownload.setOnClickListener(this);
-        binding.detailControlsDownload.setOnLongClickListener(this);
         binding.detailControlsShare.setOnClickListener(this);
         binding.detailControlsOpenInBrowser.setOnClickListener(this);
         binding.detailControlsPlayWithKodi.setOnClickListener(this);
@@ -1646,8 +1634,6 @@ public final class VideoDetailFragment
             }
         }
 
-        binding.detailControlsDownload.setVisibility(info.getStreamType() == StreamType.LIVE_STREAM
-                || info.getStreamType() == StreamType.AUDIO_LIVE_STREAM ? View.GONE : View.VISIBLE);
         binding.detailControlsBackground.setVisibility(info.getAudioStreams().isEmpty()
                 ? View.GONE : View.VISIBLE);
 

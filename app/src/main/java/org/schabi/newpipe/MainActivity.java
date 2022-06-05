@@ -244,9 +244,6 @@ public class MainActivity extends AppCompatActivity {
                 .add(R.id.menu_tabs_group, ITEM_ID_BOOKMARKS, ORDER, R.string.tab_bookmarks)
                 .setIcon(R.drawable.ic_bookmark);
         drawerLayoutBinding.navigation.getMenu()
-                .add(R.id.menu_tabs_group, ITEM_ID_DOWNLOADS, ORDER, R.string.downloads)
-                .setIcon(R.drawable.ic_file_download);
-        drawerLayoutBinding.navigation.getMenu()
                 .add(R.id.menu_tabs_group, ITEM_ID_HISTORY, ORDER, R.string.action_history)
                 .setIcon(R.drawable.ic_history);
 
@@ -379,13 +376,21 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private String getServiceName(String originalName) {
+        String newName = originalName;
+        if (originalName.equalsIgnoreCase("YouTube")) {
+            newName = getString(R.string.youtube);
+        } else if (originalName.equalsIgnoreCase("SoundCloud")) {
+            newName = getString(R.string.soundcloud);
+        }
+        return newName;
+    }
+
     private void showServices() {
         for (final StreamingService s : NewPipe.getServices()) {
-            final String title = s.getServiceInfo().getName()
-                    + (ServiceHelper.isBeta(s) ? " (beta)" : "");
 
             final MenuItem menuItem = drawerLayoutBinding.navigation.getMenu()
-                    .add(R.id.menu_services_group, s.getServiceId(), ORDER, title)
+                    .add(R.id.menu_services_group, s.getServiceId(), ORDER, getServiceName(s.getServiceInfo().getName()))
                     .setIcon(ServiceHelper.getIcon(s.getServiceId()));
 
             // peertube specifics
@@ -466,8 +471,8 @@ public class MainActivity extends AppCompatActivity {
         mainBinding.getRoot().closeDrawer(GravityCompat.START, false);
         try {
             final int selectedServiceId = ServiceHelper.getSelectedServiceId(this);
-            final String selectedServiceName = NewPipe.getService(selectedServiceId)
-                    .getServiceInfo().getName();
+            final String selectedServiceName = getServiceName(NewPipe.getService(selectedServiceId)
+                    .getServiceInfo().getName());
             drawerHeaderBinding.drawerHeaderServiceView.setText(selectedServiceName);
             drawerHeaderBinding.drawerHeaderServiceIcon.setImageResource(ServiceHelper
                     .getIcon(selectedServiceId));
