@@ -1,4 +1,4 @@
-package org.schabi.newpipe.error;
+package com.systems.automaton.realtube.error;
 
 import android.os.Parcel;
 
@@ -7,7 +7,7 @@ import androidx.test.filters.LargeTest;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.schabi.newpipe.R;
+import com.systems.automaton.realtube.R;
 import org.schabi.newpipe.extractor.ServiceList;
 import org.schabi.newpipe.extractor.exceptions.ParsingException;
 
@@ -15,6 +15,9 @@ import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+
+import com.systems.automaton.realtube.error.ErrorInfo;
+import com.systems.automaton.realtube.error.UserAction;
 
 /**
  * Instrumented tests for {@link ErrorInfo}.

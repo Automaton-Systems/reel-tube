@@ -2,9 +2,9 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.schabi.newpipe">
+    package="com.systems.automaton.realtube">
 
     <application
-        android:name=".DebugApp"
+        android:name="com.systems.automaton.realtube.DebugApp"
         tools:replace="android:name" />
 </manifest>

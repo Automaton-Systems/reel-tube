@@ -1,4 +1,4 @@
-package org.schabi.newpipe.local.history
+package com.systems.automaton.realtube.local.history
 
 import androidx.test.core.app.ApplicationProvider
 import org.assertj.core.api.Assertions.assertThat
@@ -7,10 +7,11 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import org.schabi.newpipe.database.AppDatabase
-import org.schabi.newpipe.database.history.model.SearchHistoryEntry
-import org.schabi.newpipe.testUtil.TestDatabase
-import org.schabi.newpipe.testUtil.TrampolineSchedulerRule
+import com.systems.automaton.realtube.database.AppDatabase
+import com.systems.automaton.realtube.database.history.model.SearchHistoryEntry
+import com.systems.automaton.realtube.local.history.HistoryRecordManager
+import com.systems.automaton.realtube.testUtil.TestDatabase
+import com.systems.automaton.realtube.testUtil.TrampolineSchedulerRule
 import java.time.LocalDateTime
 import java.time.OffsetDateTime
 import java.time.ZoneOffset

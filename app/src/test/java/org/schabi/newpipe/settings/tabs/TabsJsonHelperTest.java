@@ -1,9 +1,11 @@
-package org.schabi.newpipe.settings.tabs;
+package com.systems.automaton.realtube.settings.tabs;
 
 import com.grack.nanojson.JsonArray;
 import com.grack.nanojson.JsonObject;
 import com.grack.nanojson.JsonParser;
 import com.grack.nanojson.JsonParserException;
+import com.systems.automaton.realtube.settings.tabs.Tab;
+import com.systems.automaton.realtube.settings.tabs.TabsJsonHelper;
 
 import org.junit.Test;
 

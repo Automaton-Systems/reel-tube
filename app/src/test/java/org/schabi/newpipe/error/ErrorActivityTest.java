@@ -1,14 +1,16 @@
-package org.schabi.newpipe.error;
+package com.systems.automaton.realtube.error;
 
 import android.app.Activity;
 
 import org.junit.Test;
-import org.schabi.newpipe.MainActivity;
-import org.schabi.newpipe.RouterActivity;
-import org.schabi.newpipe.fragments.detail.VideoDetailFragment;
+import com.systems.automaton.realtube.MainActivity;
+import com.systems.automaton.realtube.RouterActivity;
+import com.systems.automaton.realtube.fragments.detail.VideoDetailFragment;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
+
+import com.systems.automaton.realtube.error.ErrorActivity;
 
 /**
  * Unit tests for {@link ErrorActivity}.

@@ -1,4 +1,4 @@
-package org.schabi.newpipe.settings.tabs;
+package com.systems.automaton.realtube.settings.tabs;
 
 import org.junit.Test;
 
@@ -6,6 +6,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 import static org.junit.Assert.assertTrue;
+
+import com.systems.automaton.realtube.settings.tabs.Tab;
 
 public class TabTest {
     @Test

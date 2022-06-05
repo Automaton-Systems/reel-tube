@@ -13,8 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.streams.io.SharpStream;
+import com.systems.automaton.realtube.R;
+import com.systems.automaton.realtube.streams.io.SharpStream;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -29,7 +29,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Locale;
 
-import org.schabi.newpipe.streams.io.StoredFileHelper;
+import com.systems.automaton.realtube.streams.io.StoredFileHelper;
 
 public class Utility {
 

@@ -36,15 +36,15 @@ import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 
 import com.google.android.material.snackbar.Snackbar;
 
-import org.schabi.newpipe.BuildConfig;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.error.ErrorUtil;
+import com.systems.automaton.realtube.BuildConfig;
+import com.systems.automaton.realtube.R;
+import com.systems.automaton.realtube.error.ErrorUtil;
 import org.schabi.newpipe.extractor.NewPipe;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.UserAction;
-import org.schabi.newpipe.util.Localization;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.external_communication.ShareUtils;
+import com.systems.automaton.realtube.error.ErrorInfo;
+import com.systems.automaton.realtube.error.UserAction;
+import com.systems.automaton.realtube.util.Localization;
+import com.systems.automaton.realtube.util.NavigationHelper;
+import com.systems.automaton.realtube.util.external_communication.ShareUtils;
 
 import java.io.File;
 import java.net.URI;
@@ -60,7 +60,7 @@ import us.shandian.giga.get.DownloadMission;
 import us.shandian.giga.get.FinishedMission;
 import us.shandian.giga.get.Mission;
 import us.shandian.giga.get.MissionRecoveryInfo;
-import org.schabi.newpipe.streams.io.StoredFileHelper;
+import com.systems.automaton.realtube.streams.io.StoredFileHelper;
 import us.shandian.giga.service.DownloadManager;
 import us.shandian.giga.service.DownloadManagerService;
 import us.shandian.giga.ui.common.Deleter;

@@ -8,7 +8,7 @@ import android.view.View;
 
 import com.google.android.material.snackbar.Snackbar;
 
-import org.schabi.newpipe.R;
+import com.systems.automaton.realtube.R;
 
 import java.util.ArrayList;
 

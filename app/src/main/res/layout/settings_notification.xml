@@ -7,7 +7,7 @@
         android:layout_height="wrap_content"
         android:paddingTop="16dp">
 
-    <org.schabi.newpipe.views.NewPipeTextView
+    <com.systems.automaton.realtube.views.NewPipeTextView
             android:id="@+id/textView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

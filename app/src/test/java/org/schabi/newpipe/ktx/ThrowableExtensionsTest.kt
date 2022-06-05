@@ -1,5 +1,7 @@
-package org.schabi.newpipe.ktx
+package com.systems.automaton.realtube.ktx
 
+import com.systems.automaton.realtube.ktx.hasAssignableCause
+import com.systems.automaton.realtube.ktx.hasExactCause
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test

@@ -1,4 +1,4 @@
-package org.schabi.newpipe.util.external_communication;
+package com.systems.automaton.realtube.util.external_communication;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,6 +12,8 @@ import java.util.regex.Matcher;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.fail;
+
+import com.systems.automaton.realtube.util.external_communication.TimestampExtractor;
 
 @RunWith(Parameterized.class)
 public class TimestampExtractorTest {

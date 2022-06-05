@@ -37,9 +37,9 @@ import androidx.core.app.ServiceCompat;
 import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
 
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.download.DownloadActivity;
-import org.schabi.newpipe.player.helper.LockManager;
+import com.systems.automaton.realtube.R;
+import com.systems.automaton.realtube.download.DownloadActivity;
+import com.systems.automaton.realtube.player.helper.LockManager;
 
 import java.io.File;
 import java.io.IOException;
@@ -47,15 +47,15 @@ import java.util.ArrayList;
 
 import us.shandian.giga.get.DownloadMission;
 import us.shandian.giga.get.MissionRecoveryInfo;
-import org.schabi.newpipe.streams.io.StoredDirectoryHelper;
-import org.schabi.newpipe.streams.io.StoredFileHelper;
-import org.schabi.newpipe.util.Localization;
+import com.systems.automaton.realtube.streams.io.StoredDirectoryHelper;
+import com.systems.automaton.realtube.streams.io.StoredFileHelper;
+import com.systems.automaton.realtube.util.Localization;
 
 import us.shandian.giga.postprocessing.Postprocessing;
 import us.shandian.giga.service.DownloadManager.NetworkState;
 
-import static org.schabi.newpipe.BuildConfig.APPLICATION_ID;
-import static org.schabi.newpipe.BuildConfig.DEBUG;
+import static com.systems.automaton.realtube.BuildConfig.APPLICATION_ID;
+import static com.systems.automaton.realtube.BuildConfig.DEBUG;
 
 public class DownloadManagerService extends Service {
 

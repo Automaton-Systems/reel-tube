@@ -1,5 +1,6 @@
-package org.schabi.newpipe.util.urlfinder
+package com.systems.automaton.realtube.util.urlfinder
 
+import com.systems.automaton.realtube.util.urlfinder.UrlFinder
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
