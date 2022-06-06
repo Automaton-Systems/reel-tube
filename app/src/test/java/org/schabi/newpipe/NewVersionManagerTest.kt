@@ -3,8 +3,8 @@ package org.schabi.newpipe
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
-import com.systems.automaton.realtube.util.ReleaseVersionUtil.coerceUpdateCheckExpiry
-import com.systems.automaton.realtube.util.ReleaseVersionUtil.isLastUpdateCheckExpired
+import com.systems.automaton.reeltube.util.ReleaseVersionUtil.coerceUpdateCheckExpiry
+import com.systems.automaton.reeltube.util.ReleaseVersionUtil.isLastUpdateCheckExpired
 import java.time.Instant
 import java.time.ZoneId
 import java.time.format.DateTimeFormatter

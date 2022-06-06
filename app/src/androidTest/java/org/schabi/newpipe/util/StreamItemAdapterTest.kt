@@ -1,4 +1,4 @@
-package com.systems.automaton.realtube.util
+package com.systems.automaton.reeltube.util
 
 import android.content.Context
 import android.util.SparseArray
@@ -11,13 +11,11 @@ import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.MediumTest
 import androidx.test.internal.runner.junit4.statement.UiThreadStatement
-import com.systems.automaton.realtube.util.SecondaryStreamHelper
-import com.systems.automaton.realtube.util.StreamItemAdapter
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
-import com.systems.automaton.realtube.R
+import com.systems.automaton.reeltube.R
 import org.schabi.newpipe.extractor.MediaFormat
 import org.schabi.newpipe.extractor.stream.AudioStream
 import org.schabi.newpipe.extractor.stream.Stream

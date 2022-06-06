@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <com.systems.automaton.realtube.views.NewPipeTextView
+    <com.systems.automaton.reeltube.views.NewPipeTextView
         android:id="@+id/error_message_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
         android:textStyle="bold"
         tools:text="Account terminated" />
 
-    <com.systems.automaton.realtube.views.NewPipeTextView
+    <com.systems.automaton.reeltube.views.NewPipeTextView
         android:id="@+id/error_message_service_info_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
         tools:text="YouTube provides this reason:"
         tools:visibility="visible" />
 
-    <com.systems.automaton.realtube.views.NewPipeTextView
+    <com.systems.automaton.reeltube.views.NewPipeTextView
         android:id="@+id/error_message_service_explanation_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -2,9 +2,9 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.systems.automaton.realtube">
+    package="com.systems.automaton.reeltube">
 
     <application
-        android:name="com.systems.automaton.realtube.DebugApp"
+        android:name="com.systems.automaton.reeltube.DebugApp"
         tools:replace="android:name" />
 </manifest>

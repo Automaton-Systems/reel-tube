@@ -1,11 +1,9 @@
-package com.systems.automaton.realtube.util;
+package com.systems.automaton.reeltube.util;
 
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-
-import com.systems.automaton.realtube.util.SliderStrategy;
 
 public class QuadraticSliderStrategyTest {
     private static final int STEP = 100;

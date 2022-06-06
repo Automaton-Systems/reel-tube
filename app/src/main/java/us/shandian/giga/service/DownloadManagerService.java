@@ -37,9 +37,9 @@ import androidx.core.app.ServiceCompat;
 import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
 
-import com.systems.automaton.realtube.R;
-import com.systems.automaton.realtube.download.DownloadActivity;
-import com.systems.automaton.realtube.player.helper.LockManager;
+import com.systems.automaton.reeltube.R;
+import com.systems.automaton.reeltube.download.DownloadActivity;
+import com.systems.automaton.reeltube.player.helper.LockManager;
 
 import java.io.File;
 import java.io.IOException;
@@ -47,15 +47,15 @@ import java.util.ArrayList;
 
 import us.shandian.giga.get.DownloadMission;
 import us.shandian.giga.get.MissionRecoveryInfo;
-import com.systems.automaton.realtube.streams.io.StoredDirectoryHelper;
-import com.systems.automaton.realtube.streams.io.StoredFileHelper;
-import com.systems.automaton.realtube.util.Localization;
+import com.systems.automaton.reeltube.streams.io.StoredDirectoryHelper;
+import com.systems.automaton.reeltube.streams.io.StoredFileHelper;
+import com.systems.automaton.reeltube.util.Localization;
 
 import us.shandian.giga.postprocessing.Postprocessing;
 import us.shandian.giga.service.DownloadManager.NetworkState;
 
-import static com.systems.automaton.realtube.BuildConfig.APPLICATION_ID;
-import static com.systems.automaton.realtube.BuildConfig.DEBUG;
+import static com.systems.automaton.reeltube.BuildConfig.APPLICATION_ID;
+import static com.systems.automaton.reeltube.BuildConfig.DEBUG;
 
 public class DownloadManagerService extends Service {
 

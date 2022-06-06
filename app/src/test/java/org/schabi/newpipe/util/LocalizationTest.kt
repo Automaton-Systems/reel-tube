@@ -1,6 +1,5 @@
-package com.systems.automaton.realtube.util
+package com.systems.automaton.reeltube.util
 
-import com.systems.automaton.realtube.util.Localization
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.ocpsoft.prettytime.PrettyTime

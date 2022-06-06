@@ -27,7 +27,7 @@
             app:srcCompat="@drawable/ic_add"
             tools:ignore="ContentDescription" />
 
-        <com.systems.automaton.realtube.views.NewPipeTextView
+        <com.systems.automaton.reeltube.views.NewPipeTextView
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

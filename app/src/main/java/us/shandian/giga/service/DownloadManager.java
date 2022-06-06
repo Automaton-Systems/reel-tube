@@ -19,11 +19,11 @@ import us.shandian.giga.get.DownloadMission;
 import us.shandian.giga.get.FinishedMission;
 import us.shandian.giga.get.Mission;
 import us.shandian.giga.get.sqlite.FinishedMissionStore;
-import com.systems.automaton.realtube.streams.io.StoredDirectoryHelper;
-import com.systems.automaton.realtube.streams.io.StoredFileHelper;
+import com.systems.automaton.reeltube.streams.io.StoredDirectoryHelper;
+import com.systems.automaton.reeltube.streams.io.StoredFileHelper;
 import us.shandian.giga.util.Utility;
 
-import static com.systems.automaton.realtube.BuildConfig.DEBUG;
+import static com.systems.automaton.reeltube.BuildConfig.DEBUG;
 
 public class DownloadManager {
     private static final String TAG = DownloadManager.class.getSimpleName();

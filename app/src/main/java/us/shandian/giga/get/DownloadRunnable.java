@@ -2,7 +2,7 @@ package us.shandian.giga.get;
 
 import android.util.Log;
 
-import com.systems.automaton.realtube.streams.io.SharpStream;
+import com.systems.automaton.reeltube.streams.io.SharpStream;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,7 +13,7 @@ import java.util.Objects;
 import us.shandian.giga.get.DownloadMission.Block;
 import us.shandian.giga.get.DownloadMission.HttpError;
 
-import static com.systems.automaton.realtube.BuildConfig.DEBUG;
+import static com.systems.automaton.reeltube.BuildConfig.DEBUG;
 import static us.shandian.giga.get.DownloadMission.ERROR_HTTP_FORBIDDEN;
 
 

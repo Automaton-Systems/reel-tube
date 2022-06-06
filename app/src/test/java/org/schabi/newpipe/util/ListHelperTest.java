@@ -1,4 +1,4 @@
-package com.systems.automaton.realtube.util;
+package com.systems.automaton.reeltube.util;
 
 import org.junit.Test;
 import org.schabi.newpipe.extractor.MediaFormat;
@@ -12,8 +12,6 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-
-import com.systems.automaton.realtube.util.ListHelper;
 
 public class ListHelperTest {
     private static final String BEST_RESOLUTION_KEY = "best_resolution";

@@ -1,7 +1,5 @@
-package com.systems.automaton.realtube.ktx
+package com.systems.automaton.reeltube.ktx
 
-import com.systems.automaton.realtube.ktx.hasAssignableCause
-import com.systems.automaton.realtube.ktx.hasExactCause
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test

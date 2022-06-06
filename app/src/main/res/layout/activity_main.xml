@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.systems.automaton.realtube.views.FocusAwareDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.systems.automaton.reeltube.views.FocusAwareDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.systems.automaton.realtube.views.FocusAwareCoordinator
+    <com.systems.automaton.reeltube.views.FocusAwareCoordinator
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -25,12 +25,12 @@
             android:layout_gravity="center_horizontal"
             app:behavior_hideable="true"
             app:behavior_peekHeight="0dp"
-            app:layout_behavior="com.systems.automaton.realtube.player.event.CustomBottomSheetBehavior" />
+            app:layout_behavior="com.systems.automaton.reeltube.player.event.CustomBottomSheetBehavior" />
 
-    </com.systems.automaton.realtube.views.FocusAwareCoordinator>
+    </com.systems.automaton.reeltube.views.FocusAwareCoordinator>
 
     <include
         layout="@layout/drawer_layout"
         android:id="@+id/drawer_layout" />
 
-</com.systems.automaton.realtube.views.FocusAwareDrawerLayout>
+</com.systems.automaton.reeltube.views.FocusAwareDrawerLayout>

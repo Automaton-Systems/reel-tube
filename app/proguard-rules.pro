@@ -53,4 +53,4 @@
 }
 
 # for some reason NotificationModeConfigFragment wasn't kept (only referenced in a preference xml)
--keep class com.systems.automaton.realtube.settings.notifications.** { *; }
+-keep class com.systems.automaton.reeltube.settings.notifications.** { *; }

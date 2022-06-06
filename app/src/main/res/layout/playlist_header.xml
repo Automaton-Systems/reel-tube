@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:background="?attr/contrast_background_color">
 
-    <com.systems.automaton.realtube.views.NewPipeTextView
+    <com.systems.automaton.reeltube.views.NewPipeTextView
         android:id="@+id/playlist_title_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
                 app:strokeColor="#ffffff"
                 app:strokeWidth="1dp" />
 
-            <com.systems.automaton.realtube.views.NewPipeTextView
+            <com.systems.automaton.reeltube.views.NewPipeTextView
                 android:id="@+id/uploader_name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -64,7 +64,7 @@
                 tools:text="Typical uploader name" />
         </RelativeLayout>
 
-        <com.systems.automaton.realtube.views.NewPipeTextView
+        <com.systems.automaton.reeltube.views.NewPipeTextView
             android:id="@+id/playlist_stream_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

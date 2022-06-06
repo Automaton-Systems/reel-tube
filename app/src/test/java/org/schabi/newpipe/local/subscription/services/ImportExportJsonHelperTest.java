@@ -1,4 +1,4 @@
-package com.systems.automaton.realtube.local.subscription.services;
+package com.systems.automaton.reeltube.local.subscription.services;
 
 import org.junit.Test;
 import org.schabi.newpipe.extractor.subscription.SubscriptionExtractor;
@@ -13,8 +13,6 @@ import java.util.List;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
-
-import com.systems.automaton.realtube.local.subscription.services.ImportExportJsonHelper;
 
 /**
  * @see ImportExportJsonHelper

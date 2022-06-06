@@ -13,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId "org.schabi.newpipe"
-        resValue "string", "app_name", "Real Tube"
+        resValue "string", "app_name", "Reel Tube"
         minSdk 19
         targetSdk 29
         versionCode 986

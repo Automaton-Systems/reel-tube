@@ -1,4 +1,4 @@
-package com.systems.automaton.realtube.database
+package com.systems.automaton.reeltube.database
 
 import android.content.ContentValues
 import android.database.sqlite.SQLiteDatabase
@@ -8,8 +8,6 @@ import androidx.sqlite.db.framework.FrameworkSQLiteOpenHelperFactory
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
-import com.systems.automaton.realtube.database.AppDatabase
-import com.systems.automaton.realtube.database.Migrations
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Rule

@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.systems.automaton.realtube.views.player.CircleClipTapView
+    <com.systems.automaton.reeltube.views.player.CircleClipTapView
         android:id="@+id/circle_clip_tap_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="false"
         android:focusable="false" />
 
-    <com.systems.automaton.realtube.views.player.SecondsView
+    <com.systems.automaton.reeltube.views.player.SecondsView
         android:id="@+id/seconds_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

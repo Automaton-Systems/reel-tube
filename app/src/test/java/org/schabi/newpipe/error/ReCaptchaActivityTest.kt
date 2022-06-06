@@ -1,6 +1,5 @@
-package com.systems.automaton.realtube.error
+package com.systems.automaton.reeltube.error
 
-import com.systems.automaton.realtube.error.ReCaptchaActivity
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

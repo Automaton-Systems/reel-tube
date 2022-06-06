@@ -1,6 +1,6 @@
 package us.shandian.giga.io;
 
-import com.systems.automaton.realtube.streams.io.SharpStream;
+import com.systems.automaton.reeltube.streams.io.SharpStream;
 
 import java.io.IOException;
 

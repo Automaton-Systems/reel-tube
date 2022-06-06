@@ -1,10 +1,10 @@
-package com.systems.automaton.realtube.testUtil
+package com.systems.automaton.reeltube.testUtil
 
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import org.junit.Assert.assertSame
-import com.systems.automaton.realtube.NewPipeDatabase
-import com.systems.automaton.realtube.database.AppDatabase
+import com.systems.automaton.reeltube.NewPipeDatabase
+import com.systems.automaton.reeltube.database.AppDatabase
 
 class TestDatabase {
     companion object {

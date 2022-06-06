@@ -25,7 +25,7 @@
             app:srcCompat="@drawable/ic_filter_list"
             tools:ignore="ContentDescription,RtlHardcoded" />
 
-        <com.systems.automaton.realtube.views.NewPipeTextView
+        <com.systems.automaton.reeltube.views.NewPipeTextView
             android:id="@+id/sortButtonText"
             android:layout_width="match_parent"
             android:layout_height="50dp"

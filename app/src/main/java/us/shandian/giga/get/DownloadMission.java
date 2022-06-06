@@ -9,7 +9,7 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.systems.automaton.realtube.DownloaderImpl;
+import com.systems.automaton.reeltube.DownloaderImpl;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -26,12 +26,12 @@ import java.util.Objects;
 
 import javax.net.ssl.SSLException;
 
-import com.systems.automaton.realtube.streams.io.StoredFileHelper;
+import com.systems.automaton.reeltube.streams.io.StoredFileHelper;
 import us.shandian.giga.postprocessing.Postprocessing;
 import us.shandian.giga.service.DownloadManagerService;
 import us.shandian.giga.util.Utility;
 
-import static com.systems.automaton.realtube.BuildConfig.DEBUG;
+import static com.systems.automaton.reeltube.BuildConfig.DEBUG;
 
 public class DownloadMission extends Mission {
     private static final long serialVersionUID = 6L;// last bump: 07 october 2019

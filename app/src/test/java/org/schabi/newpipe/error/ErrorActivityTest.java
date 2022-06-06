@@ -1,16 +1,14 @@
-package com.systems.automaton.realtube.error;
+package com.systems.automaton.reeltube.error;
 
 import android.app.Activity;
 
 import org.junit.Test;
-import com.systems.automaton.realtube.MainActivity;
-import com.systems.automaton.realtube.RouterActivity;
-import com.systems.automaton.realtube.fragments.detail.VideoDetailFragment;
+import com.systems.automaton.reeltube.MainActivity;
+import com.systems.automaton.reeltube.RouterActivity;
+import com.systems.automaton.reeltube.fragments.detail.VideoDetailFragment;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
-
-import com.systems.automaton.realtube.error.ErrorActivity;
 
 /**
  * Unit tests for {@link ErrorActivity}.

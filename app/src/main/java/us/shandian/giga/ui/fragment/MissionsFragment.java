@@ -30,11 +30,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.nononsenseapps.filepicker.Utils;
 
-import com.systems.automaton.realtube.R;
-import com.systems.automaton.realtube.settings.NewPipeSettings;
-import com.systems.automaton.realtube.streams.io.NoFileManagerSafeGuard;
-import com.systems.automaton.realtube.streams.io.StoredFileHelper;
-import com.systems.automaton.realtube.util.FilePickerActivityHelper;
+import com.systems.automaton.reeltube.R;
+import com.systems.automaton.reeltube.settings.NewPipeSettings;
+import com.systems.automaton.reeltube.streams.io.NoFileManagerSafeGuard;
+import com.systems.automaton.reeltube.streams.io.StoredFileHelper;
+import com.systems.automaton.reeltube.util.FilePickerActivityHelper;
 
 import java.io.File;
 import java.io.IOException;

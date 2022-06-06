@@ -25,7 +25,7 @@
 
     <PreferenceScreen
         android:key="@string/player_notification_screen_key"
-        android:fragment="com.systems.automaton.realtube.settings.PlayerNotificationSettingsFragment"
+        android:fragment="com.systems.automaton.reeltube.settings.PlayerNotificationSettingsFragment"
         android:summary="@string/settings_category_player_notification_summary"
         android:title="@string/settings_category_player_notification_title"
         app:singleLineTitle="false"

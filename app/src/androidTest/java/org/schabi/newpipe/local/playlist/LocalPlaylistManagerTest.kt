@@ -1,15 +1,14 @@
-package com.systems.automaton.realtube.local.playlist
+package com.systems.automaton.reeltube.local.playlist
 
-import com.systems.automaton.realtube.local.playlist.LocalPlaylistManager
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
-import com.systems.automaton.realtube.database.AppDatabase
-import com.systems.automaton.realtube.database.stream.model.StreamEntity
+import com.systems.automaton.reeltube.database.AppDatabase
+import com.systems.automaton.reeltube.database.stream.model.StreamEntity
 import org.schabi.newpipe.extractor.stream.StreamType
-import com.systems.automaton.realtube.testUtil.TestDatabase
-import com.systems.automaton.realtube.testUtil.TrampolineSchedulerRule
+import com.systems.automaton.reeltube.testUtil.TestDatabase
+import com.systems.automaton.reeltube.testUtil.TrampolineSchedulerRule
 
 class LocalPlaylistManagerTest {
 

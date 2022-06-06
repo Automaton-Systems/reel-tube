@@ -2,8 +2,8 @@ package us.shandian.giga.postprocessing;
 
 import androidx.annotation.NonNull;
 
-import com.systems.automaton.realtube.streams.OggFromWebMWriter;
-import com.systems.automaton.realtube.streams.io.SharpStream;
+import com.systems.automaton.reeltube.streams.OggFromWebMWriter;
+import com.systems.automaton.reeltube.streams.io.SharpStream;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;

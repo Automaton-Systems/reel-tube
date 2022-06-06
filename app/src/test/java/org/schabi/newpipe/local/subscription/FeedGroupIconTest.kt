@@ -1,6 +1,5 @@
-package com.systems.automaton.realtube.local.subscription
+package com.systems.automaton.reeltube.local.subscription
 
-import com.systems.automaton.realtube.local.subscription.FeedGroupIcon
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test

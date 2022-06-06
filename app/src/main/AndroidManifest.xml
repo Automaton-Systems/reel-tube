@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.systems.automaton.realtube"
+    package="com.systems.automaton.reeltube"
     android:installLocation="auto">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -15,7 +15,7 @@
         android:required="false" />
 
     <application
-        android:name="com.systems.automaton.realtube.App"
+        android:name="com.systems.automaton.reeltube.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -25,7 +25,7 @@
         android:resizeableActivity="true"
         tools:ignore="AllowBackup">
         <activity
-            android:name="com.systems.automaton.realtube.MainActivity"
+            android:name="com.systems.automaton.reeltube.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask">
             <intent-filter>
@@ -42,7 +42,7 @@
         </receiver>
 
         <service
-            android:name="com.systems.automaton.realtube.player.MainPlayer"
+            android:name="com.systems.automaton.reeltube.player.MainPlayer"
             android:exported="false"
             android:foregroundServiceType="mediaPlayback">
             <intent-filter>
@@ -51,24 +51,24 @@
         </service>
 
         <activity
-            android:name="com.systems.automaton.realtube.player.PlayQueueActivity"
+            android:name="com.systems.automaton.reeltube.player.PlayQueueActivity"
             android:label="@string/title_activity_play_queue"
             android:launchMode="singleTask" />
 
         <activity
-            android:name="com.systems.automaton.realtube.settings.SettingsActivity"
+            android:name="com.systems.automaton.reeltube.settings.SettingsActivity"
             android:label="@string/settings" />
 
         <activity
-            android:name="com.systems.automaton.realtube.about.AboutActivity"
+            android:name="com.systems.automaton.reeltube.about.AboutActivity"
             android:label="@string/title_activity_about" />
 
-        <service android:name="com.systems.automaton.realtube.local.subscription.services.SubscriptionsImportService" />
-        <service android:name="com.systems.automaton.realtube.local.subscription.services.SubscriptionsExportService" />
-        <service android:name="com.systems.automaton.realtube.local.feed.service.FeedLoadService" />
+        <service android:name="com.systems.automaton.reeltube.local.subscription.services.SubscriptionsImportService" />
+        <service android:name="com.systems.automaton.reeltube.local.subscription.services.SubscriptionsExportService" />
+        <service android:name="com.systems.automaton.reeltube.local.feed.service.FeedLoadService" />
 
         <activity
-            android:name="com.systems.automaton.realtube.PanicResponderActivity"
+            android:name="com.systems.automaton.reeltube.PanicResponderActivity"
             android:launchMode="singleInstance"
             android:noHistory="true"
             android:theme="@android:style/Theme.NoDisplay">
@@ -80,13 +80,13 @@
         </activity>
 
         <activity
-            android:name="com.systems.automaton.realtube.ExitActivity"
+            android:name="com.systems.automaton.reeltube.ExitActivity"
             android:label="@string/general_error"
             android:theme="@android:style/Theme.NoDisplay" />
-        <activity android:name="com.systems.automaton.realtube.error.ErrorActivity" />
+        <activity android:name="com.systems.automaton.reeltube.error.ErrorActivity" />
 
         <activity
-            android:name="com.systems.automaton.realtube.util.FilePickerActivityHelper"
+            android:name="com.systems.automaton.reeltube.util.FilePickerActivityHelper"
             android:label="@string/app_name"
             android:theme="@style/FilePickerThemeDark">
             <intent-filter>
@@ -96,7 +96,7 @@
         </activity>
 
         <activity
-            android:name="com.systems.automaton.realtube.error.ReCaptchaActivity"
+            android:name="com.systems.automaton.reeltube.error.ReCaptchaActivity"
             android:label="@string/recaptcha" />
 
         <provider
@@ -110,7 +110,7 @@
         </provider>
 
         <activity
-            android:name="com.systems.automaton.realtube.RouterActivity"
+            android:name="com.systems.automaton.reeltube.RouterActivity"
             android:excludeFromRecents="true"
             android:label="@string/preferred_open_action_share_menu_title"
             android:taskAffinity=""
@@ -124,7 +124,7 @@
             </intent-filter>
         </activity>
         <service
-            android:name="com.systems.automaton.realtube.RouterActivity$FetcherService"
+            android:name="com.systems.automaton.reeltube.RouterActivity$FetcherService"
             android:exported="false" />
 
         <!-- opting out of sending metrics to Google in Android System WebView -->

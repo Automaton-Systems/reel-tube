@@ -1,11 +1,9 @@
-package com.systems.automaton.realtube.player.playqueue;
+package com.systems.automaton.reeltube.player.playqueue;
 
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotEquals;
-
-import com.systems.automaton.realtube.player.playqueue.PlayQueueItem;
 
 public class PlayQueueItemTest {
 
