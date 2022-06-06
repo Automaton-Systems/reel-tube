@@ -35,7 +35,7 @@
     <string name="autoplay_summary">Start playback automatically – %s</string>
     <string name="minimize_on_exit_summary">Action when switching to other app from main video player – %s</string>
     <string name="preferred_open_action_settings_summary">Default action when opening content – %s</string>
-    <string name="contribution_encouragement">Whether you have ideas of; translation, design changes, code cleaning, or real heavy code changes – help is always welcome. The more is done, the better it gets!</string>
+    <string name="contribution_encouragement">View all the source code and open source attributions online.</string>
     <string name="switch_to_main">Switch to Main</string>
     <string name="switch_to_popup">Switch to Pop-up</string>
     <string name="switch_to_background">Switch to Background</string>

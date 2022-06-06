@@ -39,12 +39,6 @@ class LicenseFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val binding = FragmentLicensesBinding.inflate(inflater, container, false)
-        binding.licensesAppReadLicense.setOnClickListener {
-            activeLicense = StandardLicenses.GPL3
-            compositeDisposable.add(
-                showLicense(activity, StandardLicenses.GPL3)
-            )
-        }
         for (component in softwareComponents) {
             val componentBinding = ItemSoftwareComponentBinding
                 .inflate(inflater, container, false)
