@@ -16,7 +16,7 @@ android {
         applicationId "com.systems.automaton.reeltube"
         resValue "string", "app_name", "Reel Tube"
         minSdk 19
-        targetSdk 29
+        targetSdk 30
         versionCode 987
         versionName "2.4.1"
 
