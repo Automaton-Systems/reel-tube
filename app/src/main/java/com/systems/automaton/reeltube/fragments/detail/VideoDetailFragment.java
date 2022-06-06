@@ -653,8 +653,7 @@ public final class VideoDetailFragment
             binding.detailControlsCrashThePlayer.setOnClickListener(
                     v -> VideoDetailPlayerCrasher.onCrashThePlayer(
                             this.getContext(),
-                            this.player,
-                            getLayoutInflater())
+                            this.player)
             );
         }
 
