@@ -58,6 +58,8 @@ import androidx.preference.PreferenceManager;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
 import com.systems.automaton.reeltube.R;
+import com.systems.automaton.reeltube.ads.AdManager;
+import com.systems.automaton.reeltube.ads.EventManager;
 import com.systems.automaton.reeltube.databinding.ActivityMainBinding;
 import com.systems.automaton.reeltube.databinding.DrawerHeaderBinding;
 import com.systems.automaton.reeltube.databinding.DrawerLayoutBinding;
@@ -168,6 +170,9 @@ public class MainActivity extends AppCompatActivity {
         // Schedule worker for checking for new streams and creating corresponding notifications
         // if this is enabled by the user.
         NotificationWorker.initialize(this);
+
+        AdManager.instance.initialize(this);
+        EventManager.instance.initialize(this);
     }
 
     @Override

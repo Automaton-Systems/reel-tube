@@ -67,4 +67,12 @@
         android:layout_alignParentTop="true"
         android:background="?attr/toolbar_shadow" />
 
+    <RelativeLayout
+        android:id="@+id/ad_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent">
+    </RelativeLayout>
+
 </RelativeLayout>

@@ -18,3 +18,7 @@ app/release/
 bin/
 .vscode/
 *.code-workspace
+/**/*/res/values/secrets.xml
+*.aab
+google-services.json
+

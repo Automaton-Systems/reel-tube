@@ -5,6 +5,7 @@ plugins {
     id "kotlin-parcelize"
     id "checkstyle"
     id "org.sonarqube" version "3.3"
+    id "com.google.gms.google-services"
 }
 
 android {
@@ -12,7 +13,7 @@ android {
     buildToolsVersion '31.0.0'
 
     defaultConfig {
-        applicationId "org.schabi.newpipe"
+        applicationId "com.systems.automaton.reeltube"
         resValue "string", "app_name", "Reel Tube"
         minSdk 19
         targetSdk 29
@@ -40,12 +41,12 @@ android {
             def normalizedWorkingBranch = workingBranch.replaceFirst("^[^A-Za-z]+", "").replaceAll("[^0-9A-Za-z]+", "")
             if (normalizedWorkingBranch.isEmpty() || workingBranch == "master" || workingBranch == "dev") {
                 // default values when branch name could not be determined or is master or dev
-                applicationIdSuffix ".debug"
+                //applicationIdSuffix ".debug"
                 resValue "string", "app_name", "Reel Tube"
             } else {
-                applicationIdSuffix ".debug." + normalizedWorkingBranch
-                resValue "string", "app_name", "NewPipe " + workingBranch
-                archivesBaseName = 'NewPipe_' + normalizedWorkingBranch
+                //applicationIdSuffix ".debug." + normalizedWorkingBranch
+                resValue "string", "app_name", "Reel Tube " + workingBranch
+                archivesBaseName = 'ReelTube_' + normalizedWorkingBranch
             }
         }
 
@@ -55,8 +56,8 @@ android {
         release {
             if (System.properties.containsKey('packageSuffix')) {
                 applicationIdSuffix System.getProperty('packageSuffix')
-                resValue "string", "app_name", "NewPipe " + System.getProperty('packageSuffix')
-                archivesBaseName = 'NewPipe_' + System.getProperty('packageSuffix')
+                resValue "string", "app_name", "Reel Tube " + System.getProperty('packageSuffix')
+                archivesBaseName = 'ReelTube_' + System.getProperty('packageSuffix')
             }
             minifyEnabled true
             shrinkResources true // disabled to fix F-Droid's reproducible build
@@ -233,6 +234,11 @@ dependencies {
     androidTestImplementation "androidx.test:runner:1.4.0"
     androidTestImplementation "androidx.room:room-testing:${androidxRoomVersion}"
     androidTestImplementation "org.assertj:assertj-core:${assertJVersion}"
+
+    /** Google **/
+    implementation 'com.google.android.gms:play-services-ads:21.0.0'
+    implementation platform('com.google.firebase:firebase-bom:29.3.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
 }
 
 static String getGitWorkingBranch() {

@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 
 import com.systems.automaton.reeltube.R;
+import com.systems.automaton.reeltube.ads.AdManager;
 import com.systems.automaton.reeltube.error.ErrorInfo;
 import com.systems.automaton.reeltube.error.UserAction;
 import org.schabi.newpipe.extractor.ListExtractor;
@@ -118,7 +119,9 @@ public class KioskFragment extends BaseListInfoFragment<StreamInfoItem, KioskInf
     public View onCreateView(@NonNull final LayoutInflater inflater,
                              @Nullable final ViewGroup container,
                              @Nullable final Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_kiosk, container, false);
+        View view = inflater.inflate(R.layout.fragment_kiosk, container, false);
+        AdManager.instance.createAdView(requireContext(), view.findViewById(R.id.ad_container));
+        return view;
     }
 
     /*//////////////////////////////////////////////////////////////////////////

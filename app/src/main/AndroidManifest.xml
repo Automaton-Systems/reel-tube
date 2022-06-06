@@ -134,5 +134,10 @@
         <meta-data android:name="com.samsung.android.keepalive.density" android:value="true"/>
         <!-- Version >= 3.0. DeX Dual Mode support -->
         <meta-data android:name="com.samsung.android.multidisplay.keep_process_alive" android:value="true"/>
+
+        <!-- AdMob -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/ad_app_id" />
     </application>
 </manifest>

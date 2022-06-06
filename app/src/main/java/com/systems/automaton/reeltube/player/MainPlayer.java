@@ -34,6 +34,7 @@ import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
 import com.systems.automaton.reeltube.App;
+import com.systems.automaton.reeltube.ads.AdManager;
 import com.systems.automaton.reeltube.databinding.PlayerBinding;
 import com.systems.automaton.reeltube.util.DeviceUtils;
 import com.systems.automaton.reeltube.util.ThemeHelper;
@@ -115,6 +116,11 @@ public final class MainPlayer extends Service {
             Log.d(TAG, "onStartCommand() called with: intent = [" + intent
                     + "], flags = [" + flags + "], startId = [" + startId + "]");
         }
+
+        if (AdManager.instance.showAd(player.getParentActivity())) {
+            return START_NOT_STICKY;
+        }
+
         if (Intent.ACTION_MEDIA_BUTTON.equals(intent.getAction())
                 && player.getPlayQueue() == null) {
             // Player is not working, no need to process media button's action
