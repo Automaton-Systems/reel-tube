@@ -6,7 +6,7 @@
 
     <item>
         <bitmap
-            android:src="@drawable/ic_newpipe_triangle_white"
-            android:gravity="center_vertical|center_horizontal" />
+            android:src="@drawable/ic_splash_foreground"
+            android:gravity="center|center_horizontal" />
     </item>
 </layer-list>
