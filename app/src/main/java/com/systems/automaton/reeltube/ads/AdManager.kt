@@ -18,7 +18,7 @@ class AdManager {
 
     private var mInterstitialAd: InterstitialAd? = null
     var isDisabled: Boolean = false; private set
-    private var isInitialized: Boolean = false
+    var isInitialized: Boolean = false; private set
 
     fun initialize(context: Context) {
         if (isInitialized) {

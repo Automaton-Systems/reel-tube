@@ -171,8 +171,12 @@ public class MainActivity extends AppCompatActivity {
         // if this is enabled by the user.
         NotificationWorker.initialize(this);
 
-        AdManager.instance.initialize(this);
-        EventManager.instance.initialize(this);
+        if (!AdManager.instance.isInitialized()) {
+            AdManager.instance.initialize(this);
+        }
+        if (!EventManager.instance.isInitialized()) {
+            EventManager.instance.initialize(this);
+        }
     }
 
     @Override
