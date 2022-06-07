@@ -24,6 +24,8 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
 import com.systems.automaton.reeltube.R;
+import com.systems.automaton.reeltube.databinding.ListRadioIconItemBinding;
+import com.systems.automaton.reeltube.databinding.SingleChoiceDialogViewBinding;
 import com.systems.automaton.reeltube.player.MainPlayer;
 import com.systems.automaton.reeltube.player.NotificationConstants;
 import com.systems.automaton.reeltube.util.DeviceUtils;

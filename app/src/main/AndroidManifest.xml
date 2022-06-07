@@ -80,12 +80,6 @@
         </activity>
 
         <activity
-            android:name="com.systems.automaton.reeltube.ExitActivity"
-            android:label="@string/general_error"
-            android:theme="@android:style/Theme.NoDisplay" />
-        <activity android:name="com.systems.automaton.reeltube.error.ErrorActivity" />
-
-        <activity
             android:name="com.systems.automaton.reeltube.util.FilePickerActivityHelper"
             android:label="@string/app_name"
             android:theme="@style/FilePickerThemeDark">
@@ -139,5 +133,18 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/ad_app_id" />
+
+        <meta-data
+            android:name = "HARDCODED_KEY"
+            android:value = "${HARDCODED_KEY}"/>
+        <meta-data
+            android:name = "ANDROID_YOUTUBE_KEY"
+            android:value = "${ANDROID_YOUTUBE_KEY}"/>
+        <meta-data
+            android:name = "IOS_YOUTUBE_KEY"
+            android:value = "${IOS_YOUTUBE_KEY}"/>
+        <meta-data
+            android:name = "HARDCODED_YOUTUBE_MUSIC_KEY"
+            android:value = "${HARDCODED_YOUTUBE_MUSIC_KEY}"/>
     </application>
 </manifest>

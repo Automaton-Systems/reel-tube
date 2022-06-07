@@ -2,6 +2,8 @@ package com.systems.automaton.reeltube;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
@@ -20,6 +22,7 @@ import com.systems.automaton.reeltube.R;
 import com.systems.automaton.reeltube.error.ReCaptchaActivity;
 import org.schabi.newpipe.extractor.NewPipe;
 import org.schabi.newpipe.extractor.downloader.Downloader;
+import org.schabi.newpipe.extractor.services.youtube.YoutubeParsingHelper;
 
 import com.systems.automaton.reeltube.ktx.ExceptionUtils;
 import com.systems.automaton.reeltube.settings.NewPipeSettings;
@@ -110,6 +113,18 @@ public class App extends MultiDexApplication {
                 && prefs.getBoolean(getString(R.string.show_image_indicators_key), false));
 
         configureRxJavaErrorHandler();
+
+        // Set the keys on app start.
+        try {
+            ApplicationInfo ai = getApplicationContext().getPackageManager()
+                    .getApplicationInfo(getApplicationContext().getPackageName(), PackageManager.GET_META_DATA);
+            YoutubeParsingHelper.HARDCODED_KEY = ai.metaData.getString("HARDCODED_KEY");
+            YoutubeParsingHelper.ANDROID_YOUTUBE_KEY = ai.metaData.getString("ANDROID_YOUTUBE_KEY");
+            YoutubeParsingHelper.IOS_YOUTUBE_KEY = ai.metaData.getString("IOS_YOUTUBE_KEY");
+            YoutubeParsingHelper.HARDCODED_YOUTUBE_MUSIC_KEY = new String[] { ai.metaData.getString("HARDCODED_YOUTUBE_MUSIC_KEY"), "67", "1.20220309.01.00" };
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
