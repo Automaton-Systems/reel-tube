@@ -53,7 +53,7 @@ Reel Tube does not use the YouTube API. Websites are only parsed to fetch requir
 
 ### Supported Services
 
-Reel Tube supports multiple services. Our [docs](https://teamnewpipe.github.io/documentation/) provide more info on how a new service can be added to the app and the extractor. Please get in touch with us if you intend to add a new one. Currently supported services are:
+Reel Tube supports multiple services. The NewPipe (which this project is based upon) [docs](https://teamnewpipe.github.io/documentation/) provide more info on how a new service can be added to the app and the extractor. Please get in touch with NewPipe if you intend to add a new one. Currently supported services are:
 
 * YouTube
 * SoundCloud \[beta\]
@@ -67,7 +67,7 @@ Reel Tube supports multiple services. Our [docs](https://teamnewpipe.github.io/d
 ## Privacy Policy
 
 The Reel Tube project aims to provide a private, anonymous experience for using media web services.
-Therefore, the app does not collect any data without your consent. NewPipe's privacy policy explains in detail what data is sent and stored when you send a crash report, or comment in our blog. You can find the document [here](https://newpipe.net/legal/privacy/).
+Therefore, the app does not collect any data without your consent. NewPipe's privacy policy explains in detail what data is sent and stored when you send a crash report, or comment in our blog. You can find the document [here](https://newpipe.net/legal/privacy/), and this project is a fork of it which is mostly the same with the exception that Google Libraries are included in the app.
 
 ## License
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](https://www.gnu.org/licenses/gpl-3.0.en.html)  
