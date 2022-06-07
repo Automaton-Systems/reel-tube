@@ -8,18 +8,16 @@
 
 ## Screenshots
 
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/shot_01.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/shot_01.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/shot_02.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/shot_02.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/shot_03.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/shot_03.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/shot_04.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/shot_04.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/shot_05.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/shot_05.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/shot_06.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/shot_06.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/shot_07.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/shot_07.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/shot_08.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/shot_08.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/shot_09.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/shot_09.png)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/shot_10.png" width=160>](fastlane/metadata/android/en-US/images/phoneScreenshots/shot_10.png)
-[<img src="fastlane/metadata/android/en-US/images/tenInchScreenshots/shot_11.png" width=405>](fastlane/metadata/android/en-US/images/tenInchScreenshots/shot_11.png)
-[<img src="fastlane/metadata/android/en-US/images/tenInchScreenshots/shot_12.png" width=405>](fastlane/metadata/android/en-US/images/tenInchScreenshots/shot_12.png)
+
+[<img src="https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-1.webp" width=160>](https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-1.webp)
+[<img src="https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-2.webp" width=160>](https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-2.webp)
+[<img src="https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-3.webp" width=160>](https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-3.webp)
+[<img src="https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-4.webp" width=160>](https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-4.webp)
+[<img src="https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-5.webp" width=160>](https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-5.webp)
+[<img src="https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-6.webp" width=160>](https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-6.webp)
+[<img src="https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-7.webp" width=160>](https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-7.webp)
+[<img src="https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-8.webp" width=160>](https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-8.webp)
+[<img src="https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-9.webp" width=600>](https://github.com/automaton82/reel-tube/blob/dev/assets/play-store-9.webp)
 
 ## Description
 
