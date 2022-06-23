@@ -82,6 +82,25 @@ import com.systems.automaton.reeltube.util.ThemeHelper;
 import com.systems.automaton.reeltube.util.external_communication.ShareUtils;
 import com.systems.automaton.reeltube.util.urlfinder.UrlFinder;
 import com.systems.automaton.reeltube.views.FocusOverlayView;
+import org.schabi.newpipe.ktx.ExceptionUtils;
+import org.schabi.newpipe.local.dialog.PlaylistDialog;
+import org.schabi.newpipe.player.MainPlayer;
+import org.schabi.newpipe.player.helper.PlayerHelper;
+import org.schabi.newpipe.player.helper.PlayerHolder;
+import org.schabi.newpipe.player.playqueue.ChannelPlayQueue;
+import org.schabi.newpipe.player.playqueue.PlayQueue;
+import org.schabi.newpipe.player.playqueue.PlaylistPlayQueue;
+import org.schabi.newpipe.player.playqueue.SinglePlayQueue;
+import org.schabi.newpipe.util.Constants;
+import org.schabi.newpipe.util.DeviceUtils;
+import org.schabi.newpipe.util.ExtractorHelper;
+import org.schabi.newpipe.util.Localization;
+import org.schabi.newpipe.util.NavigationHelper;
+import org.schabi.newpipe.util.PermissionHelper;
+import org.schabi.newpipe.util.ThemeHelper;
+import org.schabi.newpipe.util.external_communication.ShareUtils;
+import org.schabi.newpipe.util.urlfinder.UrlFinder;
+import org.schabi.newpipe.views.FocusOverlayView;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -680,22 +699,13 @@ public class RouterActivity extends AppCompatActivity {
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(result -> {
-                    final List<VideoStream> sortedVideoStreams = ListHelper
-                            .getSortedStreamVideosList(this, result.getVideoStreams(),
-                                    result.getVideoOnlyStreams(), false, false);
-                    final int selectedVideoStreamIndex = ListHelper
-                            .getDefaultResolutionIndex(this, sortedVideoStreams);
+                    final DownloadDialog downloadDialog = new DownloadDialog(this, result);
+                    downloadDialog.setOnDismissListener(dialog -> finish());
 
                     final FragmentManager fm = getSupportFragmentManager();
-                    final DownloadDialog downloadDialog = DownloadDialog.newInstance(result);
-                    downloadDialog.setVideoStreams(sortedVideoStreams);
-                    downloadDialog.setAudioStreams(result.getAudioStreams());
-                    downloadDialog.setSelectedVideoStream(selectedVideoStreamIndex);
-                    downloadDialog.setOnDismissListener(dialog -> finish());
                     downloadDialog.show(fm, "downloadDialog");
                     fm.executePendingTransactions();
-                }, throwable ->
-                        showUnsupportedUrlDialog(currentUrl)));
+                }, throwable -> showUnsupportedUrlDialog(currentUrl)));
     }
 
     @Override
