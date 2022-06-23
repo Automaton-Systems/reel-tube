@@ -18,8 +18,8 @@ android {
         resValue "string", "app_name", "Reel Tube"
         minSdk 19
         targetSdk 30
-        versionCode 988
-        versionName "2.4.2"
+        versionCode 989
+        versionName "2.4.3"
 
         multiDexEnabled true
 
