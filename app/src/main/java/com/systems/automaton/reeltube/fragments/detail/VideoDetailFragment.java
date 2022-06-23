@@ -100,36 +100,7 @@ import com.systems.automaton.reeltube.util.PicassoHelper;
 import com.systems.automaton.reeltube.util.ThemeHelper;
 import com.systems.automaton.reeltube.util.external_communication.KoreUtils;
 import com.systems.automaton.reeltube.util.external_communication.ShareUtils;
-import org.schabi.newpipe.fragments.BackPressable;
-import org.schabi.newpipe.fragments.BaseStateFragment;
-import org.schabi.newpipe.fragments.EmptyFragment;
-import org.schabi.newpipe.fragments.list.comments.CommentsFragment;
-import org.schabi.newpipe.fragments.list.videos.RelatedItemsFragment;
-import org.schabi.newpipe.ktx.AnimationType;
-import org.schabi.newpipe.local.dialog.PlaylistDialog;
-import org.schabi.newpipe.local.history.HistoryRecordManager;
-import org.schabi.newpipe.player.MainPlayer;
-import org.schabi.newpipe.player.MainPlayer.PlayerType;
-import org.schabi.newpipe.player.Player;
-import org.schabi.newpipe.player.event.OnKeyDownListener;
-import org.schabi.newpipe.player.event.PlayerServiceExtendedEventListener;
-import org.schabi.newpipe.player.helper.PlayerHelper;
-import org.schabi.newpipe.player.helper.PlayerHolder;
-import org.schabi.newpipe.player.playqueue.PlayQueue;
-import org.schabi.newpipe.player.playqueue.PlayQueueItem;
-import org.schabi.newpipe.player.playqueue.SinglePlayQueue;
-import org.schabi.newpipe.util.Constants;
-import org.schabi.newpipe.util.DeviceUtils;
-import org.schabi.newpipe.util.ExtractorHelper;
-import org.schabi.newpipe.util.ListHelper;
-import org.schabi.newpipe.util.Localization;
-import org.schabi.newpipe.util.NavigationHelper;
-import org.schabi.newpipe.util.PermissionHelper;
-import org.schabi.newpipe.util.PicassoHelper;
-import org.schabi.newpipe.util.StreamTypeUtil;
-import org.schabi.newpipe.util.ThemeHelper;
-import org.schabi.newpipe.util.external_communication.KoreUtils;
-import org.schabi.newpipe.util.external_communication.ShareUtils;
+import com.systems.automaton.reeltube.util.StreamTypeUtil;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -154,13 +125,7 @@ import static com.systems.automaton.reeltube.player.helper.PlayerHelper.globalSc
 import static com.systems.automaton.reeltube.player.helper.PlayerHelper.isClearingQueueConfirmationRequired;
 import static com.systems.automaton.reeltube.player.playqueue.PlayQueueItem.RECOVERY_UNSET;
 import static com.systems.automaton.reeltube.util.ExtractorHelper.showMetaInfoInTextView;
-import static org.schabi.newpipe.ktx.ViewUtils.animate;
-import static org.schabi.newpipe.ktx.ViewUtils.animateRotation;
-import static org.schabi.newpipe.player.helper.PlayerHelper.globalScreenOrientationLocked;
-import static org.schabi.newpipe.player.helper.PlayerHelper.isClearingQueueConfirmationRequired;
-import static org.schabi.newpipe.player.playqueue.PlayQueueItem.RECOVERY_UNSET;
-import static org.schabi.newpipe.util.ExtractorHelper.showMetaInfoInTextView;
-import static org.schabi.newpipe.util.ListHelper.getUrlAndNonTorrentStreams;
+import static com.systems.automaton.reeltube.util.ListHelper.getUrlAndNonTorrentStreams;
 
 public final class VideoDetailFragment
         extends BaseStateFragment<StreamInfo>

@@ -11,20 +11,13 @@ import com.systems.automaton.reeltube.R;
 import com.systems.automaton.reeltube.database.stream.model.StreamStateEntity;
 import org.schabi.newpipe.extractor.InfoItem;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
-import org.schabi.newpipe.extractor.stream.StreamType;
 import com.systems.automaton.reeltube.info_list.InfoItemBuilder;
 import com.systems.automaton.reeltube.ktx.ViewUtils;
 import com.systems.automaton.reeltube.local.history.HistoryRecordManager;
 import com.systems.automaton.reeltube.util.PicassoHelper;
 import com.systems.automaton.reeltube.util.Localization;
 import com.systems.automaton.reeltube.views.AnimatedProgressBar;
-import org.schabi.newpipe.info_list.InfoItemBuilder;
-import org.schabi.newpipe.ktx.ViewUtils;
-import org.schabi.newpipe.local.history.HistoryRecordManager;
-import org.schabi.newpipe.util.PicassoHelper;
-import org.schabi.newpipe.util.Localization;
-import org.schabi.newpipe.util.StreamTypeUtil;
-import org.schabi.newpipe.views.AnimatedProgressBar;
+import com.systems.automaton.reeltube.util.StreamTypeUtil;
 
 import java.util.concurrent.TimeUnit;
 

@@ -159,14 +159,6 @@ import com.systems.automaton.reeltube.databinding.PlayerPopupCloseOverlayBinding
 import com.systems.automaton.reeltube.error.ErrorInfo;
 import com.systems.automaton.reeltube.error.ErrorUtil;
 import com.systems.automaton.reeltube.error.UserAction;
-import org.schabi.newpipe.MainActivity;
-import org.schabi.newpipe.R;
-import org.schabi.newpipe.database.stream.model.StreamEntity;
-import org.schabi.newpipe.databinding.PlayerBinding;
-import org.schabi.newpipe.databinding.PlayerPopupCloseOverlayBinding;
-import org.schabi.newpipe.error.ErrorInfo;
-import org.schabi.newpipe.error.ErrorUtil;
-import org.schabi.newpipe.error.UserAction;
 import org.schabi.newpipe.extractor.Info;
 import org.schabi.newpipe.extractor.MediaFormat;
 import org.schabi.newpipe.extractor.stream.StreamInfo;

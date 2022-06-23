@@ -2,7 +2,7 @@ package com.systems.automaton.reeltube.player.resolver;
 
 import static org.schabi.newpipe.extractor.stream.AudioStream.UNKNOWN_BITRATE;
 import static org.schabi.newpipe.extractor.stream.VideoStream.RESOLUTION_UNKNOWN;
-import static org.schabi.newpipe.player.helper.PlayerDataSource.LIVE_STREAM_EDGE_GAP_MILLIS;
+import static com.systems.automaton.reeltube.player.helper.PlayerDataSource.LIVE_STREAM_EDGE_GAP_MILLIS;
 
 import android.net.Uri;
 import android.util.Log;
@@ -38,16 +38,8 @@ import com.systems.automaton.reeltube.player.mediaitem.MediaItemTag;
 import com.systems.automaton.reeltube.player.mediaitem.StreamInfoTag;
 import com.systems.automaton.reeltube.util.StreamTypeUtil;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import static com.systems.automaton.reeltube.player.helper.PlayerDataSource.LIVE_STREAM_EDGE_GAP_MILLIS;
 import org.schabi.newpipe.extractor.stream.VideoStream;
-import org.schabi.newpipe.player.datasource.NonUriHlsDataSourceFactory;
-import org.schabi.newpipe.player.helper.PlayerDataSource;
-import org.schabi.newpipe.player.mediaitem.MediaItemTag;
-import org.schabi.newpipe.player.mediaitem.StreamInfoTag;
-import org.schabi.newpipe.util.StreamTypeUtil;
+import com.systems.automaton.reeltube.player.datasource.NonUriHlsDataSourceFactory;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

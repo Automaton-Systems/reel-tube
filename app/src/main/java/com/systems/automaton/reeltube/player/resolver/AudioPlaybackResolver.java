@@ -1,6 +1,6 @@
 package com.systems.automaton.reeltube.player.resolver;
 
-import static org.schabi.newpipe.util.ListHelper.getNonTorrentStreams;
+import static com.systems.automaton.reeltube.util.ListHelper.getNonTorrentStreams;
 
 import android.content.Context;
 import android.util.Log;
@@ -13,14 +13,9 @@ import com.google.android.exoplayer2.source.MediaSource;
 import org.schabi.newpipe.extractor.stream.AudioStream;
 import org.schabi.newpipe.extractor.stream.StreamInfo;
 import com.systems.automaton.reeltube.player.helper.PlayerDataSource;
-import com.systems.automaton.reeltube.player.helper.PlayerHelper;
 import com.systems.automaton.reeltube.player.mediaitem.MediaItemTag;
 import com.systems.automaton.reeltube.player.mediaitem.StreamInfoTag;
 import com.systems.automaton.reeltube.util.ListHelper;
-import org.schabi.newpipe.player.helper.PlayerDataSource;
-import org.schabi.newpipe.player.mediaitem.MediaItemTag;
-import org.schabi.newpipe.player.mediaitem.StreamInfoTag;
-import org.schabi.newpipe.util.ListHelper;
 
 import java.util.List;
 

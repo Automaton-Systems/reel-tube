@@ -14,8 +14,6 @@ import com.systems.automaton.reeltube.DownloaderImpl;
 import com.systems.automaton.reeltube.R;
 import androidx.annotation.NonNull;
 
-import org.schabi.newpipe.DownloaderImpl;
-import org.schabi.newpipe.R;
 import org.schabi.newpipe.extractor.MediaFormat;
 import org.schabi.newpipe.extractor.stream.AudioStream;
 import org.schabi.newpipe.extractor.stream.Stream;

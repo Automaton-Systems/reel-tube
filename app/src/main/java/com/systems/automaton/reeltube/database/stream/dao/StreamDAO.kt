@@ -12,7 +12,7 @@ import com.systems.automaton.reeltube.database.BasicDAO
 import com.systems.automaton.reeltube.database.stream.model.StreamEntity
 import com.systems.automaton.reeltube.database.stream.model.StreamEntity.Companion.STREAM_ID
 import org.schabi.newpipe.extractor.stream.StreamType
-import org.schabi.newpipe.util.StreamTypeUtil
+import com.systems.automaton.reeltube.util.StreamTypeUtil
 import java.time.OffsetDateTime
 
 @Dao

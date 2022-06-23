@@ -1,6 +1,6 @@
 package com.systems.automaton.reeltube.player.helper;
 
-import static org.schabi.newpipe.MainActivity.DEBUG;
+import static com.systems.automaton.reeltube.MainActivity.DEBUG;
 
 import android.content.Context;
 import android.util.Log;
@@ -23,12 +23,12 @@ import com.google.android.exoplayer2.upstream.TransferListener;
 import com.google.android.exoplayer2.upstream.cache.LeastRecentlyUsedCacheEvictor;
 import com.google.android.exoplayer2.upstream.cache.SimpleCache;
 
-import org.schabi.newpipe.DownloaderImpl;
+import com.systems.automaton.reeltube.DownloaderImpl;
 import org.schabi.newpipe.extractor.services.youtube.dashmanifestcreators.YoutubeOtfDashManifestCreator;
 import org.schabi.newpipe.extractor.services.youtube.dashmanifestcreators.YoutubePostLiveStreamDvrDashManifestCreator;
 import org.schabi.newpipe.extractor.services.youtube.dashmanifestcreators.YoutubeProgressiveDashManifestCreator;
-import org.schabi.newpipe.player.datasource.NonUriHlsDataSourceFactory;
-import org.schabi.newpipe.player.datasource.YoutubeHttpDataSource;
+import com.systems.automaton.reeltube.player.datasource.NonUriHlsDataSourceFactory;
+import com.systems.automaton.reeltube.player.datasource.YoutubeHttpDataSource;
 
 import java.io.File;
 

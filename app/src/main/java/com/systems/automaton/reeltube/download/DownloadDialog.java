@@ -84,8 +84,7 @@ import us.shandian.giga.service.MissionState;
 
 import static com.systems.automaton.reeltube.util.Localization.assureCorrectAppLanguage;
 import static org.schabi.newpipe.extractor.stream.DeliveryMethod.PROGRESSIVE_HTTP;
-import static org.schabi.newpipe.util.ListHelper.getStreamsOfSpecifiedDelivery;
-import static org.schabi.newpipe.util.Localization.assureCorrectAppLanguage;
+import static com.systems.automaton.reeltube.util.ListHelper.getStreamsOfSpecifiedDelivery;
 
 public class DownloadDialog extends DialogFragment
         implements RadioGroup.OnCheckedChangeListener, AdapterView.OnItemSelectedListener {

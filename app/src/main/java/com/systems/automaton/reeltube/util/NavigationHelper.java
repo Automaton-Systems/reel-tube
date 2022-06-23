@@ -63,7 +63,7 @@ import com.systems.automaton.reeltube.util.external_communication.ShareUtils;
 
 import java.util.List;
 
-import static org.schabi.newpipe.util.ListHelper.getUrlAndNonTorrentStreams;
+import static com.systems.automaton.reeltube.util.ListHelper.getUrlAndNonTorrentStreams;
 
 public final class NavigationHelper {
     public static final String MAIN_FRAGMENT_TAG = "main_fragment_tag";

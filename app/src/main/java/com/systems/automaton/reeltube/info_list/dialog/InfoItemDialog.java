@@ -25,9 +25,7 @@ import org.schabi.newpipe.extractor.stream.StreamInfoItem;
 import org.schabi.newpipe.extractor.stream.StreamType;
 import com.systems.automaton.reeltube.player.helper.PlayerHolder;
 import com.systems.automaton.reeltube.util.external_communication.KoreUtils;
-import org.schabi.newpipe.player.helper.PlayerHolder;
-import org.schabi.newpipe.util.StreamTypeUtil;
-import org.schabi.newpipe.util.external_communication.KoreUtils;
+import com.systems.automaton.reeltube.util.StreamTypeUtil;
 
 import java.util.ArrayList;
 import java.util.List;

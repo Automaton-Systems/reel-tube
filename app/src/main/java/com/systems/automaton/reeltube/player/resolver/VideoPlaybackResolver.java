@@ -28,8 +28,8 @@ import java.util.List;
 import java.util.Optional;
 
 import static com.google.android.exoplayer2.C.TIME_UNSET;
-import static org.schabi.newpipe.util.ListHelper.getUrlAndNonTorrentStreams;
-import static org.schabi.newpipe.util.ListHelper.getNonTorrentStreams;
+import static com.systems.automaton.reeltube.util.ListHelper.getUrlAndNonTorrentStreams;
+import static com.systems.automaton.reeltube.util.ListHelper.getNonTorrentStreams;
 
 public class VideoPlaybackResolver implements PlaybackResolver {
     private static final String TAG = VideoPlaybackResolver.class.getSimpleName();
