@@ -11,13 +11,13 @@ import com.systems.automaton.reeltube.R;
 import com.systems.automaton.reeltube.database.stream.model.StreamStateEntity;
 import org.schabi.newpipe.extractor.InfoItem;
 import org.schabi.newpipe.extractor.stream.StreamInfoItem;
-import org.schabi.newpipe.extractor.stream.StreamType;
 import com.systems.automaton.reeltube.info_list.InfoItemBuilder;
 import com.systems.automaton.reeltube.ktx.ViewUtils;
 import com.systems.automaton.reeltube.local.history.HistoryRecordManager;
 import com.systems.automaton.reeltube.util.PicassoHelper;
 import com.systems.automaton.reeltube.util.Localization;
 import com.systems.automaton.reeltube.views.AnimatedProgressBar;
+import com.systems.automaton.reeltube.util.StreamTypeUtil;
 
 import java.util.concurrent.TimeUnit;
 
@@ -70,8 +70,7 @@ public class StreamMiniInfoItemHolder extends InfoItemHolder {
             } else {
                 itemProgressView.setVisibility(View.GONE);
             }
-        } else if (item.getStreamType() == StreamType.LIVE_STREAM
-                || item.getStreamType() == StreamType.AUDIO_LIVE_STREAM) {
+        } else if (StreamTypeUtil.isLiveStream(item.getStreamType())) {
             itemDurationView.setText(R.string.duration_live);
             itemDurationView.setBackgroundColor(ContextCompat.getColor(itemBuilder.getContext(),
                     R.color.live_duration_background_color));
@@ -96,6 +95,8 @@ public class StreamMiniInfoItemHolder extends InfoItemHolder {
             case VIDEO_STREAM:
             case LIVE_STREAM:
             case AUDIO_LIVE_STREAM:
+            case POST_LIVE_STREAM:
+            case POST_LIVE_AUDIO_STREAM:
                 enableLongClick(item);
                 break;
             case NONE:
@@ -113,7 +114,7 @@ public class StreamMiniInfoItemHolder extends InfoItemHolder {
         final StreamStateEntity state
                 = historyRecordManager.loadStreamState(infoItem).blockingGet()[0];
         if (state != null && item.getDuration() > 0
-                && item.getStreamType() != StreamType.LIVE_STREAM) {
+                && !StreamTypeUtil.isLiveStream(item.getStreamType())) {
             itemProgressView.setMax((int) item.getDuration());
             if (itemProgressView.getVisibility() == View.VISIBLE) {
                 itemProgressView.setProgressAnimated((int) TimeUnit.MILLISECONDS
