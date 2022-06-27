@@ -57,6 +57,7 @@ import androidx.preference.PreferenceManager;
 
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 
+import com.systems.automaton.reeltube.R;
 import com.systems.automaton.reeltube.ads.AdManager;
 import com.systems.automaton.reeltube.ads.EventManager;
 import com.systems.automaton.reeltube.databinding.ActivityMainBinding;
@@ -136,12 +137,6 @@ public class MainActivity extends AppCompatActivity {
         // enable TLS1.1/1.2 for kitkat devices, to fix download and play for media.ccc.de sources
         if (Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT) {
             TLSSocketFactoryCompat.setAsDefault();
-        }
-
-        // Set soundcloud by default if not audio.
-        int serviceId = ServiceHelper.getSelectedServiceId(this);
-        if (serviceId != 1 && serviceId != 4) {
-            ServiceHelper.setSelectedServiceId(this, 1);
         }
 
         ThemeHelper.setDayNightMode(this);
@@ -411,10 +406,6 @@ public class MainActivity extends AppCompatActivity {
             // peertube specifics
             if (s.getServiceId() == 3) {
                 enhancePeertubeMenu(s, menuItem);
-            }
-
-            if (s.getServiceId() != 1 && s.getServiceId() != 4) {
-                menuItem.setVisible(false);
             }
         }
         drawerLayoutBinding.navigation.getMenu()

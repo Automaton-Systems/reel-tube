@@ -37,7 +37,7 @@ class AdManager {
     fun createAdView(context: Context, viewGroup: ViewGroup) {
         val localAdView = AdView(context)
         viewGroup.addView(localAdView)
-        localAdView.adUnitId = context.getString(R.string.music_ad_unit_id)
+        localAdView.adUnitId = context.getString(R.string.ad_unit_id)
         localAdView.setAdSize(getAdSize(context, viewGroup))
         localAdView.loadAd(AdRequest.Builder().build())
     }
@@ -65,7 +65,7 @@ class AdManager {
         }
 
         val adRequest = AdRequest.Builder().build()
-        InterstitialAd.load(context, context.getString(R.string.music_interstitial_ad_unit_id), adRequest, object : InterstitialAdLoadCallback() {
+        InterstitialAd.load(context, context.getString(R.string.interstitial_ad_unit_id), adRequest, object : InterstitialAdLoadCallback() {
             override fun onAdFailedToLoad(adError: LoadAdError) {
                 Log.d(TAG, adError.message)
                 mInterstitialAd = null

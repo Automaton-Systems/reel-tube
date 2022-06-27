@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- YouTube -->
-    <color name="light_youtube_primary_color">#6ECB63</color>
+    <color name="light_youtube_primary_color">#16003B</color>
     <color name="light_youtube_dark_color">#413F42</color>
     <color name="light_youtube_accent_color">#000000</color>
     <color name="light_youtube_statusbar_color">#7F8487</color>
 
-    <color name="dark_youtube_primary_color">#6ECB63</color>
+    <color name="dark_youtube_primary_color">#16003B</color>
     <color name="dark_youtube_dark_color">#413F42</color>
     <color name="dark_youtube_accent_color">#FFFFFF</color>
     <color name="dark_youtube_statusbar_color">#7F8487</color>
 
     <!-- SoundCloud -->
-    <color name="light_soundcloud_primary_color">#6ECB63</color>
+    <color name="light_soundcloud_primary_color">#16003B</color>
     <color name="light_soundcloud_dark_color">#413F42</color>
     <color name="light_soundcloud_accent_color">#000000</color>
     <color name="light_soundcloud_statusbar_color">#7F8487</color>
 
-    <color name="dark_soundcloud_primary_color">#6ECB63</color>
+    <color name="dark_soundcloud_primary_color">#16003B</color>
     <color name="dark_soundcloud_dark_color">#413F42</color>
     <color name="dark_soundcloud_accent_color">#FFFFFF</color>
     <color name="dark_soundcloud_statusbar_color">#7F8487</color>
 
     <!-- PeerTube -->
-    <color name="light_peertube_primary_color">#6ECB63</color>
+    <color name="light_peertube_primary_color">#16003B</color>
     <color name="light_peertube_dark_color">#413F42</color>
     <color name="light_peertube_accent_color">#000000</color>
     <color name="light_peertube_statusbar_color">#7F8487</color>
 
-    <color name="dark_peertube_primary_color">#6ECB63</color>
+    <color name="dark_peertube_primary_color">#16003B</color>
     <color name="dark_peertube_dark_color">#413F42</color>
     <color name="dark_peertube_accent_color">#FFFFFF</color>
     <color name="dark_peertube_statusbar_color">#7F8487</color>
 
     <!-- media.ccc.de -->
-    <color name="light_media_ccc_primary_color">#6ECB63</color>
+    <color name="light_media_ccc_primary_color">#16003B</color>
     <color name="light_media_ccc_accent_color">#000000</color>
     <color name="light_media_ccc_statusbar_color">#7F8487</color>
 
-    <color name="dark_media_ccc_primary_color">#6ECB63</color>
+    <color name="dark_media_ccc_primary_color">#16003B</color>
     <color name="dark_media_ccc_accent_color">#FFFFFF</color>
     <color name="dark_media_ccc_statusbar_color">#7F8487</color>
 
     <!-- Bandcamp -->
-    <color name="light_bandcamp_primary_color">#6ECB63</color>
+    <color name="light_bandcamp_primary_color">#16003B</color>
     <color name="light_bandcamp_accent_color">#000000</color>
     <color name="light_bandcamp_statusbar_color">#7F8487</color>
 
-    <color name="dark_bandcamp_primary_color">#6ECB63</color>
+    <color name="dark_bandcamp_primary_color">#16003B</color>
     <color name="dark_bandcamp_accent_color">#FFFFFF</color>
     <color name="dark_bandcamp_statusbar_color">#7F8487</color>
 

@@ -14,8 +14,8 @@ android {
     buildToolsVersion '31.0.0'
 
     defaultConfig {
-        applicationId "com.systems.automaton.reelmusic"
-        resValue "string", "app_name", "Reel Music"
+        applicationId "com.systems.automaton.reeltube"
+        resValue "string", "app_name", "Reel Tube"
         minSdk 19
         targetSdk 30
         versionCode 991
@@ -40,14 +40,14 @@ android {
             // suffix the app id and the app name with git branch name
             def workingBranch = getGitWorkingBranch()
             def normalizedWorkingBranch = workingBranch.replaceFirst("^[^A-Za-z]+", "").replaceAll("[^0-9A-Za-z]+", "")
-            if (normalizedWorkingBranch.isEmpty() || workingBranch == "master" || workingBranch == "dev" || workingBranch == "reel-music") {
+            if (normalizedWorkingBranch.isEmpty() || workingBranch == "master" || workingBranch == "dev") {
                 // default values when branch name could not be determined or is master or dev
                 //applicationIdSuffix ".debug"
-                resValue "string", "app_name", "Reel Music"
+                resValue "string", "app_name", "Reel Tube"
             } else {
                 //applicationIdSuffix ".debug." + normalizedWorkingBranch
-                resValue "string", "app_name", "Reel Music " + workingBranch
-                archivesBaseName = 'ReelMusic_' + normalizedWorkingBranch
+                resValue "string", "app_name", "Reel Tube " + workingBranch
+                archivesBaseName = 'ReelTube_' + normalizedWorkingBranch
             }
         }
 
@@ -57,8 +57,8 @@ android {
         release {
             if (System.properties.containsKey('packageSuffix')) {
                 applicationIdSuffix System.getProperty('packageSuffix')
-                resValue "string", "app_name", "Reel Music " + System.getProperty('packageSuffix')
-                archivesBaseName = 'ReelMusic_' + System.getProperty('packageSuffix')
+                resValue "string", "app_name", "Reel Tube " + System.getProperty('packageSuffix')
+                archivesBaseName = 'ReelTube_' + System.getProperty('packageSuffix')
             }
             minifyEnabled true
             shrinkResources true // disabled to fix F-Droid's reproducible build
