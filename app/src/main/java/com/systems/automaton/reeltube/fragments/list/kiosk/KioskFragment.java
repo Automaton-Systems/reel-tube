@@ -120,7 +120,7 @@ public class KioskFragment extends BaseListInfoFragment<StreamInfoItem, KioskInf
                              @Nullable final ViewGroup container,
                              @Nullable final Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_kiosk, container, false);
-        AdManager.instance.createAdView(requireContext(), view.findViewById(R.id.ad_container));
+        //AdManager.instance.createAdView(requireContext(), view.findViewById(R.id.ad_container));
         return view;
     }
 

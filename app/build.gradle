@@ -18,8 +18,8 @@ android {
         resValue "string", "app_name", "Reel Music"
         minSdk 19
         targetSdk 30
-        versionCode 990
-        versionName "2.4.4"
+        versionCode 991
+        versionName "2.4.5"
 
         multiDexEnabled true
 
