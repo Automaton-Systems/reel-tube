@@ -1,10 +1,10 @@
 package com.systems.automaton.reeltube.local.subscription;
 
 import static org.schabi.newpipe.extractor.subscription.SubscriptionExtractor.ContentSource.CHANNEL_URL;
-import static org.schabi.newpipe.local.subscription.services.SubscriptionsImportService.CHANNEL_URL_MODE;
-import static org.schabi.newpipe.local.subscription.services.SubscriptionsImportService.INPUT_STREAM_MODE;
-import static org.schabi.newpipe.local.subscription.services.SubscriptionsImportService.KEY_MODE;
-import static org.schabi.newpipe.local.subscription.services.SubscriptionsImportService.KEY_VALUE;
+import static com.systems.automaton.reeltube.local.subscription.services.SubscriptionsImportService.CHANNEL_URL_MODE;
+import static com.systems.automaton.reeltube.local.subscription.services.SubscriptionsImportService.INPUT_STREAM_MODE;
+import static com.systems.automaton.reeltube.local.subscription.services.SubscriptionsImportService.KEY_MODE;
+import static com.systems.automaton.reeltube.local.subscription.services.SubscriptionsImportService.KEY_VALUE;
 
 import android.app.Activity;
 import android.content.Intent;
