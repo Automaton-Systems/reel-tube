@@ -189,75 +189,75 @@ public class DownloadDialog extends DialogFragment
     @Override
     public void onCreate(@Nullable final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (DEBUG) {
-            Log.d(TAG, "onCreate() called with: "
-                    + "savedInstanceState = [" + savedInstanceState + "]");
-        }
-
-        if (!PermissionHelper.checkStoragePermissions(getActivity(),
-                PermissionHelper.DOWNLOAD_DIALOG_REQUEST_CODE)) {
-            dismiss();
-            return;
-        }
-
-        context = getContext();
-
-        setStyle(STYLE_NO_TITLE, ThemeHelper.getDialogTheme(context));
-        Icepick.restoreInstanceState(this, savedInstanceState);
-
-        final SparseArray<SecondaryStreamHelper<AudioStream>> secondaryStreams
-                = new SparseArray<>(4);
-        final List<VideoStream> videoStreams = wrappedVideoStreams.getStreamsList();
-
-        for (int i = 0; i < videoStreams.size(); i++) {
-            if (!videoStreams.get(i).isVideoOnly()) {
-                continue;
-            }
-            final AudioStream audioStream = SecondaryStreamHelper
-                    .getAudioStreamFor(wrappedAudioStreams.getStreamsList(), videoStreams.get(i));
-
-            if (audioStream != null) {
-                secondaryStreams.append(i, new SecondaryStreamHelper<>(wrappedAudioStreams,
-                        audioStream));
-            } else if (DEBUG) {
-                final MediaFormat mediaFormat = videoStreams.get(i).getFormat();
-                if (mediaFormat != null) {
-                    Log.w(TAG, "No audio stream candidates for video format "
-                            + mediaFormat.name());
-                } else {
-                    Log.w(TAG, "No audio stream candidates for unknown video format");
-                }
-            }
-        }
-
-        this.videoStreamsAdapter = new StreamItemAdapter<>(context, wrappedVideoStreams,
-                secondaryStreams);
-        this.audioStreamsAdapter = new StreamItemAdapter<>(context, wrappedAudioStreams);
-        this.subtitleStreamsAdapter = new StreamItemAdapter<>(context, wrappedSubtitleStreams);
-
-        final Intent intent = new Intent(context, DownloadManagerService.class);
-        context.startService(intent);
-
-        context.bindService(intent, new ServiceConnection() {
-            @Override
-            public void onServiceConnected(final ComponentName cname, final IBinder service) {
-                final DownloadManagerBinder mgr = (DownloadManagerBinder) service;
-
-                mainStorageAudio = mgr.getMainStorageAudio();
-                mainStorageVideo = mgr.getMainStorageVideo();
-                downloadManager = mgr.getDownloadManager();
-                askForSavePath = mgr.askForSavePath();
-
-                okButton.setEnabled(true);
-
-                context.unbindService(this);
-            }
-
-            @Override
-            public void onServiceDisconnected(final ComponentName name) {
-                // nothing to do
-            }
-        }, Context.BIND_AUTO_CREATE);
+//        if (DEBUG) {
+//            Log.d(TAG, "onCreate() called with: "
+//                    + "savedInstanceState = [" + savedInstanceState + "]");
+//        }
+//
+//        if (!PermissionHelper.checkStoragePermissions(getActivity(),
+//                PermissionHelper.DOWNLOAD_DIALOG_REQUEST_CODE)) {
+//            dismiss();
+//            return;
+//        }
+//
+//        context = getContext();
+//
+//        setStyle(STYLE_NO_TITLE, ThemeHelper.getDialogTheme(context));
+//        Icepick.restoreInstanceState(this, savedInstanceState);
+//
+//        final SparseArray<SecondaryStreamHelper<AudioStream>> secondaryStreams
+//                = new SparseArray<>(4);
+//        final List<VideoStream> videoStreams = wrappedVideoStreams.getStreamsList();
+//
+//        for (int i = 0; i < videoStreams.size(); i++) {
+//            if (!videoStreams.get(i).isVideoOnly()) {
+//                continue;
+//            }
+//            final AudioStream audioStream = SecondaryStreamHelper
+//                    .getAudioStreamFor(wrappedAudioStreams.getStreamsList(), videoStreams.get(i));
+//
+//            if (audioStream != null) {
+//                secondaryStreams.append(i, new SecondaryStreamHelper<>(wrappedAudioStreams,
+//                        audioStream));
+//            } else if (DEBUG) {
+//                final MediaFormat mediaFormat = videoStreams.get(i).getFormat();
+//                if (mediaFormat != null) {
+//                    Log.w(TAG, "No audio stream candidates for video format "
+//                            + mediaFormat.name());
+//                } else {
+//                    Log.w(TAG, "No audio stream candidates for unknown video format");
+//                }
+//            }
+//        }
+//
+//        this.videoStreamsAdapter = new StreamItemAdapter<>(context, wrappedVideoStreams,
+//                secondaryStreams);
+//        this.audioStreamsAdapter = new StreamItemAdapter<>(context, wrappedAudioStreams);
+//        this.subtitleStreamsAdapter = new StreamItemAdapter<>(context, wrappedSubtitleStreams);
+//
+//        final Intent intent = new Intent(context, DownloadManagerService.class);
+//        context.startService(intent);
+//
+//        context.bindService(intent, new ServiceConnection() {
+//            @Override
+//            public void onServiceConnected(final ComponentName cname, final IBinder service) {
+//                final DownloadManagerBinder mgr = (DownloadManagerBinder) service;
+//
+//                mainStorageAudio = mgr.getMainStorageAudio();
+//                mainStorageVideo = mgr.getMainStorageVideo();
+//                downloadManager = mgr.getDownloadManager();
+//                askForSavePath = mgr.askForSavePath();
+//
+//                okButton.setEnabled(true);
+//
+//                context.unbindService(this);
+//            }
+//
+//            @Override
+//            public void onServiceDisconnected(final ComponentName name) {
+//                // nothing to do
+//            }
+//        }, Context.BIND_AUTO_CREATE);
     }
 
     @Override

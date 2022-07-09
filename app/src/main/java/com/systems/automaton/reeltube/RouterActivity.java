@@ -497,9 +497,9 @@ public class RouterActivity extends AppCompatActivity {
             }
             // download is redundant for linkType CHANNEL AND PLAYLIST (till playlist downloading is
             // not supported )
-            returnedItems.add(new AdapterChoiceItem(getString(R.string.download_key),
-                    getString(R.string.download),
-                    R.drawable.ic_file_download));
+//            returnedItems.add(new AdapterChoiceItem(getString(R.string.download_key),
+//                    getString(R.string.download),
+//                    R.drawable.ic_file_download));
 
             // Add to playlist is not necessary for CHANNEL and PLAYLIST linkType since those can
             // not be added to a playlist
