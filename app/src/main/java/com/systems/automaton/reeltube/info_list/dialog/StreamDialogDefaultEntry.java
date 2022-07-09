@@ -2,6 +2,7 @@ package com.systems.automaton.reeltube.info_list.dialog;
 
 import static com.systems.automaton.reeltube.util.NavigationHelper.openChannelFragment;
 import static com.systems.automaton.reeltube.util.SparseItemUtil.fetchItemInfoIfSparse;
+import static com.systems.automaton.reeltube.util.SparseItemUtil.fetchStreamInfoAndSaveToDatabase;
 import static com.systems.automaton.reeltube.util.SparseItemUtil.fetchUploaderUrlIfSparse;
 
 import android.net.Uri;
@@ -11,6 +12,7 @@ import androidx.annotation.StringRes;
 
 import com.systems.automaton.reeltube.R;
 import com.systems.automaton.reeltube.database.stream.model.StreamEntity;
+import com.systems.automaton.reeltube.download.DownloadDialog;
 import com.systems.automaton.reeltube.local.dialog.PlaylistAppendDialog;
 import com.systems.automaton.reeltube.local.dialog.PlaylistDialog;
 import com.systems.automaton.reeltube.local.history.HistoryRecordManager;
@@ -109,6 +111,15 @@ public enum StreamDialogDefaultEntry {
     SHARE(R.string.share, (fragment, item) ->
             ShareUtils.shareText(fragment.requireContext(), item.getName(), item.getUrl(),
                     item.getThumbnailUrl())),
+
+    DOWNLOAD(R.string.download, (fragment, item) ->
+            fetchStreamInfoAndSaveToDatabase(fragment.requireContext(), item.getServiceId(),
+                    item.getUrl(), info -> {
+                        final DownloadDialog downloadDialog
+                                = new DownloadDialog(fragment.requireContext(), info);
+                        downloadDialog.show(fragment.getChildFragmentManager(), "downloadDialog");
+                    })
+    ),
 
     OPEN_IN_BROWSER(R.string.open_in_browser, (fragment, item) ->
             ShareUtils.openUrlInBrowser(fragment.requireContext(), item.getUrl())),

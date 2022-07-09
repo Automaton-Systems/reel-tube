@@ -18,6 +18,7 @@ import com.systems.automaton.reeltube.local.LocalItemBuilder;
 import com.systems.automaton.reeltube.local.history.HistoryRecordManager;
 import com.systems.automaton.reeltube.util.PicassoHelper;
 import com.systems.automaton.reeltube.util.Localization;
+import com.systems.automaton.reeltube.util.ServiceHelper;
 import com.systems.automaton.reeltube.views.AnimatedProgressBar;
 
 import java.time.format.DateTimeFormatter;
@@ -60,7 +61,7 @@ public class LocalPlaylistStreamItemHolder extends LocalItemHolder {
         itemVideoTitleView.setText(item.getStreamEntity().getTitle());
         itemAdditionalDetailsView.setText(Localization
                 .concatenateStrings(item.getStreamEntity().getUploader(),
-                        NewPipe.getNameOfService(item.getStreamEntity().getServiceId())));
+                        ServiceHelper.getNameOfServiceById(item.getStreamEntity().getServiceId())));
 
         if (item.getStreamEntity().getDuration() > 0) {
             itemDurationView.setText(Localization
