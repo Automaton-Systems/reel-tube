@@ -1,7 +1,7 @@
 package com.systems.automaton.reeltube.settings.tabs;
 
-import static org.schabi.newpipe.settings.tabs.Tab.typeFrom;
-import static org.schabi.newpipe.util.ServiceHelper.getNameOfServiceById;
+import static com.systems.automaton.reeltube.settings.tabs.Tab.typeFrom;
+import static com.systems.automaton.reeltube.util.ServiceHelper.getNameOfServiceById;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
