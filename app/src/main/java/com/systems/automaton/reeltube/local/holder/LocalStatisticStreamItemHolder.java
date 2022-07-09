@@ -18,6 +18,7 @@ import com.systems.automaton.reeltube.local.LocalItemBuilder;
 import com.systems.automaton.reeltube.local.history.HistoryRecordManager;
 import com.systems.automaton.reeltube.util.PicassoHelper;
 import com.systems.automaton.reeltube.util.Localization;
+import com.systems.automaton.reeltube.util.ServiceHelper;
 import com.systems.automaton.reeltube.views.AnimatedProgressBar;
 
 import java.time.format.DateTimeFormatter;
@@ -71,11 +72,12 @@ public class LocalStatisticStreamItemHolder extends LocalItemHolder {
 
     private String getStreamInfoDetailLine(final StreamStatisticsEntry entry,
                                            final DateTimeFormatter dateTimeFormatter) {
-        final String watchCount = Localization
-                .shortViewCount(itemBuilder.getContext(), entry.getWatchCount());
-        final String uploadDate = dateTimeFormatter.format(entry.getLatestAccessDate());
-        final String serviceName = NewPipe.getNameOfService(entry.getStreamEntity().getServiceId());
-        return Localization.concatenateStrings(watchCount, uploadDate, serviceName);
+        return Localization.concatenateStrings(
+                // watchCount
+                Localization.shortViewCount(itemBuilder.getContext(), entry.getWatchCount()),
+                dateTimeFormatter.format(entry.getLatestAccessDate()),
+                // serviceName
+                ServiceHelper.getNameOfServiceById(entry.getStreamEntity().getServiceId()));
     }
 
     @Override

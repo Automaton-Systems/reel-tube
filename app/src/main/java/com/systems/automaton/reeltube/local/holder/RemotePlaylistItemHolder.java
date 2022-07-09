@@ -10,6 +10,7 @@ import com.systems.automaton.reeltube.local.LocalItemBuilder;
 import com.systems.automaton.reeltube.local.history.HistoryRecordManager;
 import com.systems.automaton.reeltube.util.PicassoHelper;
 import com.systems.automaton.reeltube.util.Localization;
+import com.systems.automaton.reeltube.util.ServiceHelper;
 
 import java.time.format.DateTimeFormatter;
 
@@ -39,9 +40,9 @@ public class RemotePlaylistItemHolder extends PlaylistItemHolder {
         // Here is where the uploader name is set in the bookmarked playlists library
         if (!TextUtils.isEmpty(item.getUploader())) {
             itemUploaderView.setText(Localization.concatenateStrings(item.getUploader(),
-                    NewPipe.getNameOfService(item.getServiceId())));
+                    ServiceHelper.getNameOfServiceById(item.getServiceId())));
         } else {
-            itemUploaderView.setText(NewPipe.getNameOfService(item.getServiceId()));
+            itemUploaderView.setText(ServiceHelper.getNameOfServiceById(item.getServiceId()));
         }
 
         PicassoHelper.loadPlaylistThumbnail(item.getThumbnailUrl()).into(itemThumbnailView);

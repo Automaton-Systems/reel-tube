@@ -106,7 +106,7 @@ class ErrorPanelHelper(
             if (!isNullOrEmpty((errorInfo.throwable as AccountTerminatedException).message)) {
                 errorServiceInfoTextView.text = context.resources.getString(
                     R.string.service_provides_reason,
-                    NewPipe.getNameOfService(ServiceHelper.getSelectedServiceId(context))
+                    ServiceHelper.getSelectedService(context)?.serviceInfo?.name ?: "<unknown>"
                 )
                 errorServiceInfoTextView.isVisible = true
 
