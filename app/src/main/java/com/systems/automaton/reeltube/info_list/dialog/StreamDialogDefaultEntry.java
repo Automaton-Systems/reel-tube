@@ -112,14 +112,14 @@ public enum StreamDialogDefaultEntry {
             ShareUtils.shareText(fragment.requireContext(), item.getName(), item.getUrl(),
                     item.getThumbnailUrl())),
 
-    DOWNLOAD(R.string.download, (fragment, item) ->
-            fetchStreamInfoAndSaveToDatabase(fragment.requireContext(), item.getServiceId(),
-                    item.getUrl(), info -> {
-                        final DownloadDialog downloadDialog
-                                = new DownloadDialog(fragment.requireContext(), info);
-                        downloadDialog.show(fragment.getChildFragmentManager(), "downloadDialog");
-                    })
-    ),
+//    DOWNLOAD(R.string.download, (fragment, item) ->
+//            fetchStreamInfoAndSaveToDatabase(fragment.requireContext(), item.getServiceId(),
+//                    item.getUrl(), info -> {
+//                        final DownloadDialog downloadDialog
+//                                = new DownloadDialog(fragment.requireContext(), info);
+//                        downloadDialog.show(fragment.getChildFragmentManager(), "downloadDialog");
+//                    })
+//    ),
 
     OPEN_IN_BROWSER(R.string.open_in_browser, (fragment, item) ->
             ShareUtils.openUrlInBrowser(fragment.requireContext(), item.getUrl())),
